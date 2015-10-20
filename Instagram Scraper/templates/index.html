@@ -4,7 +4,7 @@
 	<title> Download HD Instagram Images </title>
 	<style type="text/css">
 		body{
-			background: black;
+			background: #fff;
 			color: #fff;
 		}
 		.container{
@@ -13,13 +13,24 @@
 			width: 500px;
 			padding-top: 20%;
 		}
+		#box{
+			padding: 20px;
+			font-size: 20px;
+			color: #333;
+			width: 360px;
+			border:1px solid purple;
+		}
+		#box:active, #box:focus{
+			border:1px solid purple;
+			outline:none;
+		}
 	</style>
 </head>
 <body>
 	<div class="container">
 	<p><b>Download Instagram HD (Full size)image</b></p>
 	<form action="" method="POST">
-		<input type="url" name="iurl" placeholder="https://instagram.com/p/777sGAob-_/" required >
+		<input id="box" type="url" name="iurl" placeholder="https://instagram.com/p/777sGAob-_/" required >
 		<input type="submit" value="Image URL">
 	</form>
 	
