@@ -2,6 +2,7 @@ from flask import Flask,render_template,request
 import requests
 from bs4 import BeautifulSoup
 import json
+import os
 app= Flask(__name__)
 
 @app.route('/',methods=['GET','POST'])
@@ -20,7 +21,9 @@ def index():
 		final_data=json_data['entry_data']['PostPage']
 		final=final_data[0]
 		image=final['media']['display_src']
+
 		while image!='':
+			print(image)
 			return "<img src="+image+" align='center'>"
 
 	return render_template('index.html')
