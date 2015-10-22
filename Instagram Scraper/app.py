@@ -23,14 +23,12 @@ def index():
 
 		while image!='':
 			print(image)
-			download_photo(image, "1.jpg")
-			print("image saved")
 			return "<img src="+image+" align='center'>"
 			
-			return render_template('index.html')
+	return render_template('index.html')
 
 
-def download_photo(img_url, filename):
+"""def download_photo(img_url, filename):
         image_on_web = urllib.urlopen(img_url)
         if image_on_web.headers.maintype == 'image':
             buf = image_on_web.read()
@@ -41,7 +39,7 @@ def download_photo(img_url, filename):
             downloaded_image.close()
             image_on_web.close()
         else:
-            return False    
+            return False  """  
 
 
 if __name__=='__main__':
