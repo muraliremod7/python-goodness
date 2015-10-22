@@ -35,5 +35,6 @@ def rotate_img(img_name,degrees):
 	rotated_img = img.rotate(degrees)
 	rotated_img.save("rotated_"+img_name,'JPEG')
 
-#Run Functions
-resize_img("testimage.jpeg",40,30)
+#Test Functions
+#resize_img("testimage.jpeg",40,30)
+rotate_img("testimage.jpeg",45)
