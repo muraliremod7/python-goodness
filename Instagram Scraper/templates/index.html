@@ -10,45 +10,49 @@
 			text-align: center;
 			margin: 0 auto;
 			width: 800px;
-			padding-top: 10%;
+			padding-top: 2%;
 		}
 		.container>p{
-			font-size: 40px;
+			font-size: 25px;
+			color: #00ab6b;
+			margin-bottom: 1.5em;
+			text-transform: uppercase;
 			font-family: sans-serif;
 		}
 		#box{
-			padding: 20px;
-			font-size: 20px;
-			color: #333;
+			padding: 15px 30px;
+			font-size: 16px;
+			color: rgba(0,0,0,0.8);
 			width: 360px;
-			height: 70px;
-			border:1px solid purple;
+			height: 50px;
+			background: #fff;
+			border:1px solid rgba(0,0,0,0.15);
 		}
 		#box:active, #box:focus{
-			border:1px solid purple;
+			border:1px solid #333;
 			outline:none;
 		}
 		#submit-button{
-			height: 71px;
+			height: 50px;
 			text-transform: uppercase;
-			background: purple;
-			border:1px solid purple;
+			background: #00ab6b;
+			border:1px solid #00ab6b;
 			color: #fff;
-			font-size: 20px;
+			font-size: 16px;
 			font-family: sans-serif;
 			padding:10px 20px 10px 20px;
 			margin-left: 10px;
 		}
 		#submit-button:hover{
-			background: #fff;
-			color: purple;
+			background: #00ab6b;
+			color: #fff;
 			cursor: hand;
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-	<p>Download Instagram HD Image</p>
+	<p>Instagram Image(HD) Downloader</p>
 	<form action="" method="POST">
 		<input id="box" type="url" name="iurl" placeholder="Enter Instagram Image Url" required >
 		<input id="submit-button" type="submit" value="SUBMIT">
