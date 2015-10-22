@@ -6,7 +6,8 @@ name = "testimage.jpeg"
 folder = "assets"+"/"
 
 
-#Sharepn Image Function
+
+#Sharpen Image Function
 def sharpen_img(path,img_name):
 	img = Image.open(path+img_name)
 	sharp_img = img.filter(ImageFilter.SHARPEN)
@@ -18,8 +19,10 @@ def resize_img(img_name,length,width):
 	resized_img = img.resize((width,length))
 	resized_img.save("resized_"+img_name,'JPEG')
 
-def exif():
-	exifdata = im._getexif()
+#Get Image Exif Data
+def exif(img_name):
+	img = Image.open(img_name)
+	exifdata = img._getexif()
 	print(exifdata)
 
 
