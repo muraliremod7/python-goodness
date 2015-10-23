@@ -37,4 +37,4 @@ def rotate_img(img_name,degrees):
 
 #Test Functions
 resize_img("testimage.jpeg",40,30) #resize test image to 40 by 30
-rotate_img("testimage.jpeg",45)
+rotate_img("testimage.jpeg",45) #rotate test image by 45 degrees counter-clockwise
