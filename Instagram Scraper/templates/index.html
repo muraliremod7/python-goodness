@@ -25,23 +25,22 @@
 			color: rgba(0,0,0,0.8);
 			width: 360px;
 			height: 50px;
-			border-radius: 999em;
 			background: #fff;
 			border:1px solid rgba(0,0,0,0.15);
 		}
 		#box:active, #box:focus{
-			border:1px solid #333;
+			border:1px solid #00ab6b;
 			outline:none;
 			background: #fff;
+			color: #00ab6b;
 		}
 		#submit-button{
 			height: 50px;
 			text-transform: uppercase;
-			background: #00ab6b;
+			background: #fff;
 			border:1px solid #00ab6b;
-			color: #fff;
+			color: #00ab6b;
 			font-size: 16px;
-			border-radius: 5px;	
 			font-family: sans-serif;
 			padding:10px 20px 10px 20px;
 			margin-left: 10px;
@@ -51,7 +50,12 @@
 			color: #fff;
 			cursor: hand;
 		}
-	</style>
+		img {
+		    margin-left: 20%;
+		    margin-right: 20%;
+		    width: 60%;
+		}	
+</style>
 </head>
 <body>
 	<div class="container">
@@ -60,7 +64,7 @@
 		<input id="box" type="url" name="iurl" placeholder="Enter Instagram Image Url" required >
 		<input id="submit-button" type="submit" value="SUBMIT">
 	</form>
-	
+
 	</div>
 </body>
 </html>
