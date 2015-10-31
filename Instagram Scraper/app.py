@@ -1,6 +1,7 @@
 from flask import Flask,render_template,request 
 import requests
 import urllib.request
+import urllib
 from bs4 import BeautifulSoup
 import json
 import os
@@ -26,20 +27,6 @@ def index():
 			return "<img src="+image+" align='center'>"
 			
 	return render_template('index.html')
-
-
-"""def download_photo(img_url, filename):
-        image_on_web = urllib.urlopen(img_url)
-        if image_on_web.headers.maintype == 'image':
-            buf = image_on_web.read()
-            path = os.getcwd() + "/img"
-            file_path = "%s%s" % (path, filename)
-            downloaded_image = file(file_path, "wb")
-            downloaded_image.write(buf)
-            downloaded_image.close()
-            image_on_web.close()
-        else:
-            return False  """  
 
 
 if __name__=='__main__':
