@@ -24,7 +24,7 @@ print(l)
 
 #sort elements of the array
 print(l)
-l.sort
+l.sort()
 print(l)
 
 #reverse elements of the array
