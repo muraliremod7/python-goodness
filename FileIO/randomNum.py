@@ -8,6 +8,9 @@ print(random.random())
 #generate random integer(randint) between 1 and 100
 print(random.randint(1,100))
 
+#generate random integer(randint) between 100000 and 999999
+print(random.randint(100000,999999))
+
 #shuffle a list
 items = [1,2,3,4,5,6,7,8,9]
 random.shuffle(items)
