@@ -17,7 +17,7 @@ print("Writing to File")
 for i in range(1,200):
 	x = random.randint(10000000,99999999)
 	b = random.randint(0,len(start_list)-1)	#select random item from list
-	myfile = open(filename,"a")
+	myfile = open(filename,"w")
 	myfile.write(start_list[b]+"-"+str(x))
 	myfile.write("\n") #print on a newline
 	myfile.close()
