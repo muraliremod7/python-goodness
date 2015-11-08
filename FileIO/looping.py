@@ -19,7 +19,7 @@ for i in range(1,200):
 	b = random.randint(0,len(start_list)-1)	#select random item from list
 	myfile = open(filename,"a")
 	myfile.write(start_list[b]+"-"+str(x))
-	myfile.write("\n")
+	myfile.write("\n") #print on a newline
 	myfile.close()
 
 print("Writing completed")
